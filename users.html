@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <LINK REL=StyleSheet HREF="bootstrap.css" TYPE="text/css" MEDIA=screen>
+            <title>Bootstrap y jsonPlaceholder</title>
+    </head>
+    
+    <body>
+        <header class="container-fluid text-white text-center h1" style="background:rgb(103, 71, 175); height: 9vw;" >User Page</header>
+            <nav class="row" style="background:tomato;">
+                <a class="col-sm-1 btn btn-primary " style="height: 3.5vw; padding: 5px!important;margin: 5px;">Users</a >
+                <a href="./blogs.html" class="col-sm-1 btn btn-primary" style="height: 3.5vw; padding: 5px!important;margin: 5px;">Blogs</a>
+                <span class="col-sm-8"></span>
+                <div class="col-md-1">
+                    <img class="col-md-1 rounded-circle" alt="profile" src="./profile.jpg" style="height: 3.5vw;width: 5vw;padding: 5px;" />
+
+                </div>
+            </nav>
+        <div id="mainGrid" class="container">
+
+            <div id="base" class="row border" style="background:rgb(73, 96, 201);">
+                <div id="7ndId" class="col border" style="padding: 10px;">ID</div>
+                <div id="7ndId" class="col border" style="padding: 10px;">Name</div>
+                <div id="7ndId" class="col border" style="padding: 10px;">Usurname</div>
+                <div id="7ndId" class="col border" style="padding: 10px;">Email</div>
+            </div>
+
+            <div id="6nd" class="row" >
+                <div id="6ndId" class="col border">0447</div>
+                <div id="6ndName" class="col border">Zully Noguera</div>
+                <div id="6ndUser" class="col border">Znoguera</div>
+                <div id="6nd@" class="col border">znoguera@gmail.com</div>
+            </div>
+            <div id="1nd" class="row">
+                <div id="1ndId" class="col border">0967</div>
+                <div id="1ndName" class="col border">Abelardo Rivas</div>
+                <div id="1ndUser" class="col border">abrivas</div>
+                <div id="1nd@" class="col border">JoseAb28@gmail.com</div>
+            </div>
+            <div id="2nd" class="row">
+                <div id="2ndId" class="col border">0017</div>
+                <div id="2ndName" class="col border">Joelina Salazar</div>
+                <div id="2ndUser" class="col border">Jsalazar</div>
+                <div id="2nd@" class="col border">joe.j@gmail.com</div>
+            </div>
+            <div id="3nd" class="row">
+                <div id="3ndId" class="col border">1282</div>
+                <div id="3ndName" class="col border">Moises Milano</div>
+                <div id="3ndUser" class="col border">MiMilano</div>
+                <div id="3nd@" class="col border">CAtedral800@gmail.com</div>
+            </div>
+            <div id="4nd" class="row">
+                <div id="4ndId" class="col border">9898</div>
+                <div id="4ndName" class="col border">Darwin Cordova</div>
+                <div id="4ndUser" class="col border">Dcordova</div>
+                <div id="4nd@" class="col border">YogurtLight@gmail.com</div>
+            </div>
+            <div id="5nd" class="row">
+                <div id="5ndId" class="col border">7779</div>
+                <div id="5ndName" class="col border">Ilvis Gutierres</div>
+                <div id="5ndUser" class="col border">Igutierr</div>
+                <div id="5nd@" class="col border">Cachete2828@gmail.com</div>
+            </div>
+
+
+            <div id="buttonBox" class="row">
+            
+            <button class="col border btn btn-primary" onclick="shuffle();">Shuffle Data!</button>
+            <button class="col border btn btn-primary" class="col border" onclick="writeData([
+            ['1ndId','1ndName','1ndUser','1nd@'],
+            ['2ndId','2ndName','2ndUser','2nd@'],
+            ['3ndId','3ndName','3ndUser','3nd@'],
+            ['4ndId','4ndName','4ndUser','4nd@'],
+            ['5ndId','5ndName','5ndUser','5nd@'],
+            ['6ndId','6ndName','6ndUser','6nd@']
+            ])">Update all Rows</button>
+            </div>
+        </div>
+    
+    <footer class="container-fluid fixed-bottom ">
+        <div class="row">
+            <span class="row" style="background:rgb(103, 71, 175); height: 5vw;">s</span>
+            <span class="row" style="background:rgb(54, 37, 94);">© 2020 Copyright: Bootstrap</span     >
+        </div>    
+    </footer>
+    <script async src="./index.js"></script>
+
+    </body>
+</html>
